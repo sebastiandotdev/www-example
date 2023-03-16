@@ -1,22 +1,20 @@
-import Head from "next/head";
+import { Header } from "../components/Header";
 import { Photo } from "../components/Photo";
 import { About } from "../components/About";
+import { Contact } from "../components/Contact";
+import { Network } from "../components/Network";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home - Sebastian Castro</title>
-        <meta name="description" content="I'm Sebastian" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/roar.jpg" />
-      </Head>
+      <Header />
       <main>
         <div>
           <Photo />
           <About />
         </div>
         <div>
+          <Contact />
           <p>
             I am a developer and
             <a href="https://github.com/JohanSebastiaCG">
@@ -26,10 +24,9 @@ export default function Home() {
             open source libraries. Probably reading some web specification right
             now.
           </p>
-          <p>
-            Wanna talk about something? <span>Message me on email me at</span>
-            johancs@gmail.com
-          </p>
+        </div>
+        <div>
+          <Network />
         </div>
       </main>
     </>
