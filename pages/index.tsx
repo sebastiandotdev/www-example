@@ -3,6 +3,7 @@ import { Photo } from "../components/Photo";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
 import { Network } from "../components/Network";
+import { Like } from "../components/Like";
 
 export default function Home() {
   return (
@@ -15,15 +16,7 @@ export default function Home() {
         </div>
         <div>
           <Contact />
-          <p>
-            I am a developer and
-            <a href="https://github.com/JohanSebastiaCG">
-              lover of open source.
-            </a>
-            I like Rust, Go, TypeScript, and quick websites. I build some other
-            open source libraries. Probably reading some web specification right
-            now.
-          </p>
+          <Like />
         </div>
         <div>
           <Network />
