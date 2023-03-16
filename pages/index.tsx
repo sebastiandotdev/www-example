@@ -9,16 +9,20 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
-        <div>
+      <main className="mx-auto max-w-screen-md px-4 sm:px-6 md:px-8 my-12 sm:my-20 md:my-32">
+        <div className="flex flex-col sm:flex-row gap-8">
           <Photo />
-          <About />
+          <div className="flex flex-col justify-center">
+            <About />
+          </div>
         </div>
-        <div>
-          <Contact />
+        <div className="mt-10 leading-7 text-gray-900 text-lg">
           <Like />
         </div>
-        <div>
+        <div className="mt-10 leading-7 text-lg text-gray-900">
+          <Contact />
+        </div>
+        <div className="mt-10 flex gap-4">
           <Network />
         </div>
       </main>
