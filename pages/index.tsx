@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import { Photo } from "../components/Photo";
+import { About } from "../components/About";
 
 export default function Home() {
   return (
@@ -12,13 +13,8 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          <div>
-            <Image src="/roar.jpg" alt="sebastian" width={200} height={200} />
-          </div>
-          <div>
-            <h4>Hello Im</h4>
-            <h1>Sebastian</h1>
-          </div>
+          <Photo />
+          <About />
         </div>
         <div>
           <p>
