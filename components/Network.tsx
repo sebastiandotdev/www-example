@@ -5,7 +5,7 @@ export const Network = () => {
   return (
     <>
       <a
-        href="https://github.com/JohanSebastiaCG"
+        href="https://github.com/sebastian009w"
         className="text-gray-500 hover:text-gray-900 transition duration-75 ease-in-out"
       >
         <Github />
